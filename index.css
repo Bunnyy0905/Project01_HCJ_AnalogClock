@@ -1,46 +1,49 @@
 #ClockContainer{
-    position: relative;/**/
-    margin: auto;/**/
+    position: relative; /*setting position of Parent object as relative*/
+    margin: auto; /*sets the margin property to HORIZONTALLY CENTER of the element within its container i.e. sets the object in the center*/
     margin-top: 50px;
-    border: 2px solid red;
+    border: none;
     height: 50vw;
     width: 50vw;
     background: url(Clock.gif) no-repeat;
-    background-size: 100%;
+    background-size: 100%; /*background-size property specifies the size of the background images*/
 }
 
 #hour, #minute, #second{
-   position: absolute;/**/
-   background: black;
+   position: absolute;  /*an element whose computed position value is absolute or fixed*/
+   /* background-color: #000000; */
    border-radius:10px;
 }
 
 #hour{
+    background: #ff3d58;
     width: 1.75%;
     height: 20%;
     margin-left: 49%;
     margin-top: 29%;
     opacity: 0.8;
-    transform-origin: bottom;
+    transform-origin: bottom; /*Rotating from the bottom*/
 
 }
 
 #minute{
+    background: #00a6ff;
     width: 1.45%;
     height: 29%;
     margin-left: 49.2%;
     margin-top: 20%;
     opacity: 0.8;
-    transform-origin: bottom;
+    transform-origin: bottom;   /*Rotating from the bottom*/
 
 }
 
 #second{
+    background: #000000;
     width: 1%;
     height: 35%;
     margin-left: 49.5%;
     margin-top: 14%;
     opacity: 0.8;
-    transform-origin: bottom;
+    transform-origin: bottom;   /*Rotating from the bottom*/
 
 }
